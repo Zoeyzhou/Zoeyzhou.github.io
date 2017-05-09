@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>react技术栈 | 前端的成长之路</title>
+  <title>gitlab和github多账号提交 | 前端的成长之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="企业级管理系统项目技术栈使用的是ant-design，基于react+redux封装">
+  <meta name="description" content="这两天因为临时插入到一个新项目中，发现在提交代码的时候提交的用户名变成了github的账号，觉得有点奇怪，但是因为急于项目进度，也没太注意。项目一忙完赶紧找原因来了。 想起来之前在弄hexo博客的时候配置了一下github的ssh key,可能是这个原因把本地之前配置给gitlab的ssh key覆盖掉了，于是又重新生成了一次ssh key，并且重新给gitlab账号添加了，心想这下差不多了，然而">
 <meta property="og:type" content="website">
-<meta property="og:title" content="react技术栈">
-<meta property="og:url" content="http://yoursite.com/tech/index.html">
+<meta property="og:title" content="gitlab和github多账号提交">
+<meta property="og:url" content="http://yoursite.com/git/index.html">
 <meta property="og:site_name" content="前端的成长之路">
-<meta property="og:description" content="企业级管理系统项目技术栈使用的是ant-design，基于react+redux封装">
-<meta property="og:updated_time" content="2017-05-04T09:13:54.000Z">
+<meta property="og:description" content="这两天因为临时插入到一个新项目中，发现在提交代码的时候提交的用户名变成了github的账号，觉得有点奇怪，但是因为急于项目进度，也没太注意。项目一忙完赶紧找原因来了。 想起来之前在弄hexo博客的时候配置了一下github的ssh key,可能是这个原因把本地之前配置给gitlab的ssh key覆盖掉了，于是又重新生成了一次ssh key，并且重新给gitlab账号添加了，心想这下差不多了，然而">
+<meta property="og:image" content="http://7xooma.com1.z0.glb.clouddn.com/example.jpeg">
+<meta property="og:updated_time" content="2017-05-09T12:21:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="react技术栈">
-<meta name="twitter:description" content="企业级管理系统项目技术栈使用的是ant-design，基于react+redux封装">
+<meta name="twitter:title" content="gitlab和github多账号提交">
+<meta name="twitter:description" content="这两天因为临时插入到一个新项目中，发现在提交代码的时候提交的用户名变成了github的账号，觉得有点奇怪，但是因为急于项目进度，也没太注意。项目一忙完赶紧找原因来了。 想起来之前在弄hexo博客的时候配置了一下github的ssh key,可能是这个原因把本地之前配置给gitlab的ssh key覆盖掉了，于是又重新生成了一次ssh key，并且重新给gitlab账号添加了，心想这下差不多了，然而">
+<meta name="twitter:image" content="http://7xooma.com1.z0.glb.clouddn.com/example.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="前端的成长之路" type="application/atom+xml">
   
@@ -170,20 +172,23 @@
         
   
     <h1 class="article-title" itemprop="name">
-      react技术栈
+      gitlab和github多账号提交
     </h1>
   
 
         
-        <a href="/tech/index.html" class="archive-article-date">
-  	<time datetime="2017-05-04T09:13:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-04</time>
+        <a href="/git/index.html" class="archive-article-date">
+  	<time datetime="2017-05-09T11:43:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="企业级管理系统"><a href="#企业级管理系统" class="headerlink" title="企业级管理系统"></a>企业级管理系统</h2><p>项目技术栈使用的是ant-design，基于react+redux封装</p>
+        <p>这两天因为临时插入到一个新项目中，发现在提交代码的时候提交的用户名变成了github的账号，觉得有点奇怪，但是因为急于项目进度，也没太注意。项目一忙完赶紧找原因来了。</p>
+<p>想起来之前在弄hexo博客的时候配置了一下github的ssh key,可能是这个原因把本地之前配置给gitlab的ssh key覆盖掉了，于是又重新生成了一次ssh key，并且重新给gitlab账号添加了，心想这下差不多了，然而pull 或 push代码时仍然是github的账号，于是各种百度谷歌，终于找到症结点，发现之前在配置hexo的时候执行了一个操作，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;John Doe&quot;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.email johndoe@example.com</div></pre></td></tr></table></figure>
+<p>将用户名和邮箱设置成全局的了，导致将自己的gitlab账号覆盖掉了，于是又重新将邮箱和用户名设置成gitlab的了，这才可以了<br><img src="http://7xooma.com1.z0.glb.clouddn.com/example.jpeg" alt="example"></p>
 
       
 
@@ -263,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/tech/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/git/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,7 +287,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="react技术栈" data-url="http://yoursite.com/tech/index.html"></div>
+	<div class="ds-thread" data-thread-key="undefined" data-title="gitlab和github多账号提交" data-url="http://yoursite.com/git/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
